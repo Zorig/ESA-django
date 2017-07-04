@@ -1,0 +1,17 @@
+{{outlet}}
+<section id="section2" >
+  <div class="row collapse">
+    <div class="large-3 large-centered columns text-center">
+      <form {{action 'authenticate' reg_number password on='submit' }} method="post">
+        <div>
+          {{input class="input" type="text" value=reg_number placeholder="90123100)" required=true}}
+        </div>
+        <div>
+          {{input class="input" type="password" value=password placeholder="pwd" required=true}}
+        </div>
+        <button class="button expanded primary" type="submit">login</button>
+      </form>
+      {{error}}
+    </div>
+  </div>
+</section>
